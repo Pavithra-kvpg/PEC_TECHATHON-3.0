@@ -50,7 +50,8 @@ hospital-resource-optimisation/
 ├── architecture_diagram.png               # System architecture diagram
 └── README.md
 
-## 🖥️ Steps to Run
+
+🖥️ Steps to Run
 
 1. Generate data
 python scripts/generate_synthetic_hospital_data.py
