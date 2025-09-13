@@ -49,3 +49,19 @@ hospital-resource-optimisation/
 │
 ├── architecture_diagram.png               # System architecture diagram
 └── README.md
+
+## 🖥️ Steps to Run
+
+1. Generate data
+python scripts/generate_synthetic_hospital_data.py
+
+2. Train forecast model
+python models/train_forecast_model.py
+
+3. Start backend API
+cd backend
+uvicorn server_model:app --reload
+
+4. Start dashboard
+cd dashboard
+streamlit run app_streamlit.py
