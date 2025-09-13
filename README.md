@@ -6,7 +6,6 @@
 
 A real-time dashboard powered by predictive analytics to optimize critical hospital resources such as oxygen supply, bed availability, and staff allocation. Built for techathons, this project demonstrates how data science can be applied to solve real-world healthcare challenges.
 
-![Architecture Diagram](architecture_diagram.png)
 
 ## 🚀 Features
 
@@ -50,28 +49,3 @@ hospital-resource-optimisation/
 │
 ├── architecture_diagram.png               # System architecture diagram
 └── README.md
-
-## Steps to Run
-
-1. Generate data
-```bash
-python scripts/generate_synthetic_hospital_data.py
-```
-
-2. Train forecast model
-```bash
-python models/train_forecast_model.py
-```
-
-3. Start backend API
-```bash
-cd backend
-uvicorn server__model:app --reload
-```
-
-4. Start dashboard
-```bash
-cd dashboard
-streamlit run app_streamlit.py
-```
-
